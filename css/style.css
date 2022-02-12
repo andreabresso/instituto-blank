@@ -202,6 +202,14 @@ main a:visited {
     align-items: center;
 }
 
+.flag {
+    transition: all .2s ease-in-out;
+}
+
+.flag:hover {
+    transform: scale(1.2);
+}
+
 /* Tablet, celular horizontal y Desktop */
 
 @media only screen and (min-width: 600px) {
