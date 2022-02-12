@@ -228,12 +228,25 @@ main a:visited {
 }
 
 .languages-items a {
-    padding: 0em 2rem;
-
+    position: relative;
+    text-decoration: none;
 }
 
-.languages-items p {
-    padding: 2rem;
+.languages-items a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.languages-items a:hover::before {
+    transform: scaleX(1);
 }
 
 /* 2. Estilos main de Cursos */
