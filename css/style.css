@@ -26,28 +26,35 @@ html {
 
 .layout-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 20% 1fr 1fr 1fr 1fr 20%;
 }
 
 .header-item {
     overflow: hidden;
-    grid-column: 1/ 7;
     grid-row: 1 / 2;
+    background-color: slategrey;
+    color: #F6F5F5;
 }
 
 .main-item {
-    grid-column: 1 / 7;
     grid-row: 2 / 6;
+    background-color: hsla(0, 5%, 91%);
 }
 
 .footer-item {
-    grid-column: 1 / 7;
     grid-row: 6 / 7;
+    color: black;
+    font-weight: bolder;
+    background-image: url('../multimedia/footer-shape.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos Generales */
-
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -55,11 +62,6 @@ body {
 }
 
 /* Estilos Header */
-header {
-    background-color: slategrey;
-    font-weight: 550;
-    color: #F6F5F5;
-}
 
 .nav-menu {
     display: flex;
@@ -104,10 +106,6 @@ nav a:visited {
 /* Fin estilos Header */
 
 /* Estilos Main */
-
-main {
-    background-color: hsla(0, 5%, 91%);
-}
 
 .first-section {
     background-color: #D3E0EA;
@@ -455,17 +453,6 @@ textarea {
 
 
 /* Estilos Footer */
-
-footer {
-    color: black;
-    font-weight: bolder;
-    background-image: url('../multimedia/footer-shape.jpg');
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 footer p {
     padding: 2rem;
