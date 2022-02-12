@@ -35,6 +35,7 @@ html {
     grid-row: 1 / 2;
     background-color: slategrey;
     color: #F6F5F5;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
 
 .main-item {
