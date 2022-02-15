@@ -332,54 +332,6 @@ textarea {
 
 /* 4. Fin estilos contacto */
 
-/* 5. Estilos Recomendaciones del mes */
-
-.first-section-p-recommendations {
-    text-align: center;
-    padding: 0em 2rem;
-}
-
-.recommendation-container h2 {
-    padding: 1em 0rem;
-
-}
-
-.iframe-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.iframe-container p {
-    padding: 2rem;
-}
-
-/* Tablet, celular horizontal y Desktop */
-
-@media only screen and (min-width: 600px) {
-    .iframe-container {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding-bottom: 2rem;
-    }
-
-    .iframe-container iframe {
-        width: 45%;
-        padding-left: 2rem;
-    
-    }
-
-    .iframe-container p {
-        width: 45%;
-        padding: 0em 2rem;
-    }
-}
-
-
-/* 5. Fin estilos recomendaciones del mes */
-
 
 /* Fin estilos Main */
 
