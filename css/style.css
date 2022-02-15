@@ -128,12 +128,7 @@ main a:visited {
 
 /* 1. Estilos main de Index */
 
-.flags-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
+/* Animación banderas */
 
 .flag {
     transition: all .2s ease-in-out;
@@ -143,22 +138,12 @@ main a:visited {
     transform: scale(1.2);
 }
 
-/* Tablet, celular horizontal y Desktop */
-
-@media only screen and (min-width: 600px) {
-    .flags-container {
-        flex-direction: row;
-    }
-}
-
 .languages-items {
     border-bottom: 5px solid #D3E0EA;
     padding: 2rem;
 }
 
-.languages-items#korean {
-    margin-bottom: 2rem;
-}
+/* Animación links idiomas */
 
 .languages-items a {
     position: relative;
