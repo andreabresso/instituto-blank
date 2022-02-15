@@ -24,22 +24,10 @@ html {
 
 /* Estilos Grid Layout */
 
-.layout-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 1fr 1fr 1fr 1fr 20%;
-}
 
-.header-item {
-    overflow: hidden;
-    grid-row: 1 / 2;
-    background-color: slategrey;
-    color: #F6F5F5;
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-}
+
 
 .main-item {
-    grid-row: 2 / 6;
     background-color: hsla(0, 5%, 91%);
 }
 
@@ -63,6 +51,11 @@ body {
 }
 
 /* Estilos Header */
+
+header {
+    overflow: hidden;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
 
 .nav-toggle {
     position: absolute;
