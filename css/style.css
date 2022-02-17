@@ -147,6 +147,7 @@ main a:visited {
 .languages-items a {
     position: relative;
     text-decoration: none;
+    color: inherit;
 }
 
 .languages-items a::before {
@@ -164,6 +165,52 @@ main a:visited {
 
 .languages-items a:hover::before {
     transform: scaleX(1);
+}
+
+/* Agregando emojis banderas con pseudoclases :focus y :hover y pseudoelement ::after + media query */
+
+.uk:focus::after {
+    content: '🇬🇧';
+}
+
+.france:focus::after {
+    content: '🇫🇷';
+}
+
+.germany:focus::after {
+    content: '🇩🇪';
+}
+
+.japan:focus::after {
+    content: '🇯🇵';
+}
+
+.skorea:focus::after {
+    content: '🇰🇷';
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .uk:hover::after {
+        content: '🇬🇧';
+    }
+    
+    .france:hover::after {
+        content: '🇫🇷';
+    }
+    
+    .germany:hover::after {
+        content: '🇩🇪';
+    }
+    
+    .japan:hover::after {
+        content: '🇯🇵';
+    }
+    
+    .skorea:hover::after {
+        content: '🇰🇷';
+    }
+
 }
 
 /* 2. Estilos main de Cursos */
