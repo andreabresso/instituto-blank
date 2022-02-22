@@ -1,0 +1,41 @@
+@import '../base/variables';
+
+table, th, td {
+    border: 1px double grey;
+    border-collapse: collapse;
+    padding: 0.5em 0.5rem;
+    text-align: center;
+}
+
+.language-tables {
+    font-size: 1rem;
+    padding: 1.875em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .language-table-item {
+        max-width: 90vw;
+        padding: 2em 0rem;
+        /* Tablet, celular horizontal y Desktop */
+        @media only screen and (min-width: 600px) {
+                width: 60%;
+        }
+        table {
+            width: 100%;
+            .primary-row {
+                background-color: $table-primary-row;
+            }
+            .secondary-row {
+                background-color: $table-secondary-row;
+            }
+            .level {
+                background-color: $table-level;
+            }
+        }
+    }
+}
+
+td {
+    background-color: $first-section-bg;
+}

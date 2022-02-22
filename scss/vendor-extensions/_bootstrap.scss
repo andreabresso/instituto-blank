@@ -1,0 +1,23 @@
+@import '../base/variables';
+
+/* Cambio de color del toggler icon de Bootstrap */
+.navbar-override {
+    .toggler {
+        border: 1px solid $header-font;
+        .menu-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 245, 245, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        } 
+    }
+    .header-links-container {
+        flex-basis: 100% !important;
+        justify-content: center;
+        .ul-nav {
+            align-items: center;
+            /* Cambio color de texto en navbar */
+            .header-link {
+            color: $header-font !important;
+            font-weight: 300 !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import '../base/variables';
+
+main {
+    background-color: $main-bg;
+    .first-section {
+        background-color: $first-section-bg;
+        font-size: 1rem;
+        .first-section-img {
+            max-height: 300px;
+        }
+    }
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    a {
+        &:visited {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

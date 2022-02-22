@@ -1,0 +1,22 @@
+@import '../base/variables';
+
+header {
+    overflow: hidden;
+    background: $header-bg;
+    nav {
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            &:visited {
+                text-decoration: none;
+                color: $header-font;
+            }
+            img {
+                width: 3rem;
+            }
+        }
+    }
+}

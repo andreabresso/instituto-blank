@@ -1,0 +1,33 @@
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* Estilo Gallery Tablet horizontal y Desktop */
+    @media only screen and (min-width: 600px) {
+        padding-top: 2.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .gallery-item {
+        max-width: 85vw;
+        margin: 2em 0rem;
+        overflow: hidden;
+        &:hover {
+            .gallery-img {
+                transform: scale(1.3);
+                transition: transform 0.8s ease;
+            }
+        }
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @media only screen and (min-width: 600px) {
+                width: 388px;
+                height: 295px;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+/* Animación banderas */
+
+.flag {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.languages-items {
+    border-bottom: 5px solid $first-section-bg;
+    padding: 2rem;
+    /* Animación links idiomas */
+    a {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+        }
+        &:hover::before {
+            transform: scaleX(1);
+        }
+    }
+}
+
+/* Agregando emojis banderas con content */
+
+.uk {
+    &:focus::after {
+        content: '🇬🇧';
+    }
+    @media only screen and (min-width: 1000px) {
+        &:hover::after {
+            content: '🇬🇧';
+        }
+    }
+}
+
+.france {
+    &:focus::after {
+        content: '🇫🇷';
+    }
+    @media only screen and (min-width: 1000px) {
+        &:hover::after {
+            content: '🇫🇷';
+        }
+    }
+}
+
+.germany {
+    &:focus::after {
+        content: '🇩🇪';
+    }
+    @media only screen and (min-width: 1000px) {
+        &:hover::after {
+            content: '🇩🇪';
+        }
+    }
+}
+
+.japan {
+    &:focus::after {
+        content: '🇯🇵';
+    }
+    @media only screen and (min-width: 1000px) {
+        &:hover::after {
+            content: '🇯🇵';
+        }
+    }
+}
+
+.skorea {
+    &:focus::after {
+        content: '🇰🇷';
+    }
+    @media only screen and (min-width: 1000px) {
+        &:hover::after {
+            content: '🇰🇷';
+        }
+    }
+}

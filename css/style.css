@@ -1,402 +1,318 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 100%;
-    /* 100% = 16px */
+  font-size: 100%;
+  /* 100% = 16px */
 }
-
-/* Tablet, celular horizontal y Desktop */
-
 @media only screen and (min-width: 600px) {
-
-    html {
-        font-size: 1.2rem;
-    }
-
+  html {
+    font-size: 1.2rem;
+  }
 }
-
-/* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
-/* Estilos Generales */
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
 
-.main-item {
-    background-color: hsla(0, 5%, 91%);
+footer {
+  color: black;
+  font-weight: bolder;
+  background-image: url("../multimedia/footer-shape.jpg");
+  background-repeat: no-repeat;
+}
+footer p {
+  text-align: center;
+}
+footer .social-media-container a {
+  padding: 0rem 1.5rem;
 }
 
-/* Estilos Header */
-
+/* Colors */
 header {
-    overflow: hidden;
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  overflow: hidden;
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+header nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+header nav a:visited {
+  text-decoration: none;
+  color: #F6F5F5;
+}
+header nav a img {
+  width: 3rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 300;
+/* Colors */
+main {
+  background-color: #e9e7e7;
 }
-
-nav a:visited {
-    text-decoration: none;
-    color: #F6F5F5;
+main .first-section {
+  background-color: #D3E0EA;
+  font-size: 1rem;
 }
-
-.logo img {
-    width: 3rem;
+main .first-section .first-section-img {
+  max-height: 300px;
 }
-
-/* Cambio de color del toggler icon de Bootstrap */
-
-.navbar-override .menu-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 245, 245, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");;
+main h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
 }
-
-.navbar-override .toggler {
-    border: 1px solid #F6F5F5;
+main h2 {
+  font-size: 1.8rem;
+  text-align: center;
 }
-
-/* Cambio color de texto del navbar de Bootstrap */
-
-.header-link {
-    color: #F6F5F5 !important;
-    font-weight: 300 !important;
+main p {
+  text-align: justify;
 }
-
-/* Cambio justify-content del navbar de Bootstrap */
-
-.navbar-override .header-links-container {
-    flex-basis: 100% !important;
-    justify-content: center;
-}
-
-.ul-nav {
-    align-items: center;
-}
-
-
-/* Fin estilos Header */
-
-/* Estilos Main */
-
-.first-section {
-    background-color: #D3E0EA;
-    font-size: 1rem;
-}
-
-.first-section-img {
-    max-height: 300px;
-}
-
-/* Tablet horizontal y Desktop */
-
-@media only screen and (min-width: 1000px) {
-    .first-section-p {
-        font-size: 1.2rem;
-    }
-}
-
-h1 {
-    font-size: 2rem;
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-p {
-    text-align: justify;
-}
-
 main a:visited {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-/* 1. Estilos main de Index */
-
-/* Animación banderas */
-
-.flag {
-    transition: all .2s ease-in-out;
+/* Colors */
+iframe {
+  max-width: 90vw;
 }
 
-.flag:hover {
-    transform: scale(1.2);
+/* Estilos Form */
+.form-container {
+  padding: 1.2em 1.2rem;
 }
-
-.languages-items {
-    border-bottom: 5px solid #D3E0EA;
-    padding: 2rem;
+.form-container form {
+  border: 2px solid #23687b;
+  border-radius: 0.4rem;
+  /* Tablet, celular horizontal y Desktop */
 }
-
-/* Animación links idiomas */
-
-.languages-items a {
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-}
-
-.languages-items a::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform: scaleX(0);
-    transition: transform 0.5s ease;
-}
-
-.languages-items a:hover::before {
-    transform: scaleX(1);
-}
-
-/* Agregando emojis banderas con pseudoclases :focus y :hover y pseudoelement ::after + media query */
-
-.uk:focus::after {
-    content: '🇬🇧';
-}
-
-.france:focus::after {
-    content: '🇫🇷';
-}
-
-.germany:focus::after {
-    content: '🇩🇪';
-}
-
-.japan:focus::after {
-    content: '🇯🇵';
-}
-
-.skorea:focus::after {
-    content: '🇰🇷';
-}
-
 @media only screen and (min-width: 1000px) {
-
-    .uk:hover::after {
-        content: '🇬🇧';
-    }
-    
-    .france:hover::after {
-        content: '🇫🇷';
-    }
-    
-    .germany:hover::after {
-        content: '🇩🇪';
-    }
-    
-    .japan:hover::after {
-        content: '🇯🇵';
-    }
-    
-    .skorea:hover::after {
-        content: '🇰🇷';
-    }
-
-}
-
-/* 2. Estilos main de Cursos */
-
-table, th, td {
-    border: 1px double grey;
-    border-collapse: collapse;
-    padding: 0.5em 0.5rem;
-    text-align: center;
+  .form-container form {
+    width: 50%;
   }
-
-table {
-    width: 100%;
+}
+.form-container form .form-div {
+  padding: 0.5em 0.5rem;
+}
+.form-container form .form-div p {
+  padding: 0;
+}
+.form-container form .form-div .input-text {
+  display: block;
+  width: 99%;
+  /* Tablet, celular horizontal y Desktop */
+}
+@media only screen and (min-width: 600px) {
+  .form-container form .form-div .input-text {
+    width: 65%;
+  }
+}
+.form-container form .form-div .checkbox-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.form-container form .form-div .checkbox-options .checkbox-item {
+  padding: 0.5em 0.5rem;
+}
+.form-container form .form-div textarea {
+  width: 99%;
 }
 
-.primary-row {
-    background-color: #23687b;
-}
-
-.secondary-row {
-    background-color: #3090ab;
-}
-
-.level {
-    background-color: #80a5c2;
-}
-
-td {
-    background-color: #d3e0ea;
+/* Colors */
+table, th, td {
+  border: 1px double grey;
+  border-collapse: collapse;
+  padding: 0.5em 0.5rem;
+  text-align: center;
 }
 
 .language-tables {
-    font-size: 1rem;
-    padding: 1.875em 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  font-size: 1rem;
+  padding: 1.875em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.language-table-item {
-    max-width: 90vw;
-    padding: 2em 0rem;
+.language-tables .language-table-item {
+  max-width: 90vw;
+  padding: 2em 0rem;
+  /* Tablet, celular horizontal y Desktop */
 }
-
-/* Tablet, celular horizontal y Desktop */
-
 @media only screen and (min-width: 600px) {
-    .language-table-item {
-        width: 60%;
-    }
+  .language-tables .language-table-item {
+    width: 60%;
+  }
+}
+.language-tables .language-table-item table {
+  width: 100%;
+}
+.language-tables .language-table-item table .primary-row {
+  background-color: #23687b;
+}
+.language-tables .language-table-item table .secondary-row {
+  background-color: #3090ab;
+}
+.language-tables .language-table-item table .level {
+  background-color: #80a5c2;
 }
 
-/* 2. Fin estilos main de Cursos */
-
-/* 3. Estilos main del Instituto */
+td {
+  background-color: #D3E0EA;
+}
 
 .gallery-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* Estilo Gallery Tablet horizontal y Desktop */
 }
-
-.gallery-item {
-    max-width: 85vw;
-    margin: 2em 0rem;
-    overflow: hidden;
-}
-
-/* Animación galería */
-
-.gallery-item:hover .gallery-img {
-    transform: scale(1.3);
-    transition: transform 0.8s ease;
-}
-
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Estilo Gallery Tablet horizontal y Desktop */
-
 @media only screen and (min-width: 600px) {
-
-    .gallery-container {
-        padding-top: 2.5rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .gallery-img {
-        width: 388px;
-        height: 295px;
-        object-fit: cover;
-    }
-    
-}
-
-/* 3. Fin de estilos main del Instituto*/
-
-
-/* 4. Estilos contacto */
-
-iframe {
-    max-width: 90vw;
-}
-
-.form-container {
-    padding: 1.2em 1.2rem;
-}
-
-form {
-    border: 2px solid #23687b;
-    border-radius: 0.4rem;
-}
-
-form div p {
-    padding: 0;
-}
-
-/* Tablet, celular horizontal y Desktop */
-
-@media only screen and (min-width: 1000px) {
-    form {
-        width: 50%;
-    }
-}
-
-.form-div {
-    padding: 0.5em 0.5rem;
-}
-
-.input-text {
-    display: block;
-    width: 99%;
-}
-
-/* Tablet, celular horizontal y Desktop */
-
-@media only screen and (min-width: 600px) {
-    .input-text {
-        width: 65%;
-    }
-}
-
-.checkbox-options {
-    display: flex;
+  .gallery-container {
+    padding-top: 2.5rem;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.gallery-container .gallery-item {
+  max-width: 85vw;
+  margin: 2em 0rem;
+  overflow: hidden;
+}
+.gallery-container .gallery-item:hover .gallery-img {
+  transform: scale(1.3);
+  transition: transform 0.8s ease;
+}
+.gallery-container .gallery-item .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (min-width: 600px) {
+  .gallery-container .gallery-item .gallery-img {
+    width: 388px;
+    height: 295px;
+  }
 }
 
-.checkbox-item {
-    padding: 0.5em 0.5rem;
+/* Animación banderas */
+.flag {
+  transition: all 0.2s ease-in-out;
+}
+.flag:hover {
+  transform: scale(1.2);
 }
 
-textarea {
-    width: 99%;
+.languages-items {
+  border-bottom: 5px solid #D3E0EA;
+  padding: 2rem;
+  /* Animación links idiomas */
+}
+.languages-items a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+.languages-items a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+.languages-items a:hover::before {
+  transform: scaleX(1);
 }
 
-/* 4. Fin estilos contacto */
-
-
-/* Fin estilos Main */
-
-
-/* Estilos Footer */
-
-footer {
-    color: black;
-    font-weight: bolder;
-    background-image: url('../multimedia/footer-shape.jpg');
-    background-repeat: no-repeat;
+/* Agregando emojis banderas con content */
+.uk:focus::after {
+  content: "🇬🇧";
+}
+@media only screen and (min-width: 1000px) {
+  .uk:hover::after {
+    content: "🇬🇧";
+  }
 }
 
-footer p {
-    text-align: center;
+.france:focus::after {
+  content: "🇫🇷";
+}
+@media only screen and (min-width: 1000px) {
+  .france:hover::after {
+    content: "🇫🇷";
+  }
 }
 
-.social-media-container a {
-    padding: 0rem 1.5rem;
+.germany:focus::after {
+  content: "🇩🇪";
+}
+@media only screen and (min-width: 1000px) {
+  .germany:hover::after {
+    content: "🇩🇪";
+  }
 }
 
-/* Fin estilos Footer*/
+.japan:focus::after {
+  content: "🇯🇵";
+}
+@media only screen and (min-width: 1000px) {
+  .japan:hover::after {
+    content: "🇯🇵";
+  }
+}
+
+.skorea:focus::after {
+  content: "🇰🇷";
+}
+@media only screen and (min-width: 1000px) {
+  .skorea:hover::after {
+    content: "🇰🇷";
+  }
+}
+
+/* Colors */
+.recommendation {
+  border-bottom: 5px solid #D3E0EA;
+}
+
+/* Colors */
+/* Cambio de color del toggler icon de Bootstrap */
+.navbar-override .toggler {
+  border: 1px solid #F6F5F5;
+}
+.navbar-override .toggler .menu-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 245, 245, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-override .header-links-container {
+  flex-basis: 100% !important;
+  justify-content: center;
+}
+.navbar-override .header-links-container .ul-nav {
+  align-items: center;
+}
+
+/* Cambio color de texto en navbar */
+.header-link {
+  color: #F6F5F5 !important;
+  font-weight: 300 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

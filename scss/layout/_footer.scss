@@ -1,0 +1,14 @@
+footer {
+    color: black;
+    font-weight: bolder;
+    background-image: url('../multimedia/footer-shape.jpg');
+    background-repeat: no-repeat;
+    p {
+        text-align: center;
+    }
+    .social-media-container {
+        a {
+            padding: 0rem 1.5rem;
+        }
+    }
+}

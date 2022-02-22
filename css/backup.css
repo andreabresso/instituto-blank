@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+    /* 100% = 16px */
+}
+
+/* Tablet, celular horizontal y Desktop */
+
+@media only screen and (min-width: 600px) {
+
+    html {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* Estilos Generales */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.main-item {
+    background-color: hsla(0, 5%, 91%);
+}
+
+/* Estilos Header */
+
+header {
+    overflow: hidden;
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #F6F5F5;
+}
+
+.logo img {
+    width: 3rem;
+}
+
+/* Cambio de color del toggler icon de Bootstrap */
+
+.navbar-override .menu-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 245, 245, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");;
+}
+
+.navbar-override .toggler {
+    border: 1px solid #F6F5F5;
+}
+
+/* Cambio color de texto del navbar de Bootstrap */
+
+.header-link {
+    color: #F6F5F5 !important;
+    font-weight: 300 !important;
+}
+
+/* Cambio justify-content del navbar de Bootstrap */
+
+.navbar-override .header-links-container {
+    flex-basis: 100% !important;
+    justify-content: center;
+}
+
+.ul-nav {
+    align-items: center;
+}
+
+
+/* Fin estilos Header */
+
+/* Estilos Main */
+
+.first-section {
+    background-color: #D3E0EA;
+    font-size: 1rem;
+}
+
+.first-section-img {
+    max-height: 300px;
+}
+
+/* Tablet horizontal y Desktop */
+
+@media only screen and (min-width: 1000px) {
+    .first-section-p {
+        font-size: 1.2rem;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+main a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+/* 1. Estilos main de Index */
+
+/* Animación banderas */
+
+.flag {
+    transition: all .2s ease-in-out;
+}
+
+.flag:hover {
+    transform: scale(1.2);
+}
+
+.languages-items {
+    border-bottom: 5px solid #D3E0EA;
+    padding: 2rem;
+}
+
+/* Animación links idiomas */
+
+.languages-items a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.languages-items a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.languages-items a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Agregando emojis banderas con pseudoclases :focus y :hover y pseudoelement ::after + media query */
+
+.uk:focus::after {
+    content: '🇬🇧';
+}
+
+.france:focus::after {
+    content: '🇫🇷';
+}
+
+.germany:focus::after {
+    content: '🇩🇪';
+}
+
+.japan:focus::after {
+    content: '🇯🇵';
+}
+
+.skorea:focus::after {
+    content: '🇰🇷';
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .uk:hover::after {
+        content: '🇬🇧';
+    }
+    
+    .france:hover::after {
+        content: '🇫🇷';
+    }
+    
+    .germany:hover::after {
+        content: '🇩🇪';
+    }
+    
+    .japan:hover::after {
+        content: '🇯🇵';
+    }
+    
+    .skorea:hover::after {
+        content: '🇰🇷';
+    }
+
+}
+
+/* 2. Estilos main de Cursos */
+
+table, th, td {
+    border: 1px double grey;
+    border-collapse: collapse;
+    padding: 0.5em 0.5rem;
+    text-align: center;
+  }
+
+table {
+    width: 100%;
+}
+
+.primary-row {
+    background-color: #23687b;
+}
+
+.secondary-row {
+    background-color: #3090ab;
+}
+
+.level {
+    background-color: #80a5c2;
+}
+
+td {
+    background-color: #d3e0ea;
+}
+
+.language-tables {
+    font-size: 1rem;
+    padding: 1.875em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-table-item {
+    max-width: 90vw;
+    padding: 2em 0rem;
+}
+
+/* Tablet, celular horizontal y Desktop */
+
+@media only screen and (min-width: 600px) {
+    .language-table-item {
+        width: 60%;
+    }
+}
+
+/* 2. Fin estilos main de Cursos */
+
+/* 3. Estilos main del Instituto */
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery-item {
+    max-width: 85vw;
+    margin: 2em 0rem;
+    overflow: hidden;
+}
+
+/* Animación galería */
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.3);
+    transition: transform 0.8s ease;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo Gallery Tablet horizontal y Desktop */
+
+@media only screen and (min-width: 600px) {
+
+    .gallery-container {
+        padding-top: 2.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .gallery-img {
+        width: 388px;
+        height: 295px;
+        object-fit: cover;
+    }
+    
+}
+
+/* 3. Fin de estilos main del Instituto*/
+
+
+/* 4. Estilos contacto */
+
+iframe {
+    max-width: 90vw;
+}
+
+.form-container {
+    padding: 1.2em 1.2rem;
+}
+
+form {
+    border: 2px solid #23687b;
+    border-radius: 0.4rem;
+}
+
+form div p {
+    padding: 0;
+}
+
+/* Tablet, celular horizontal y Desktop */
+
+@media only screen and (min-width: 1000px) {
+    form {
+        width: 50%;
+    }
+}
+
+.form-div {
+    padding: 0.5em 0.5rem;
+}
+
+.input-text {
+    display: block;
+    width: 99%;
+}
+
+/* Tablet, celular horizontal y Desktop */
+
+@media only screen and (min-width: 600px) {
+    .input-text {
+        width: 65%;
+    }
+}
+
+.checkbox-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.checkbox-item {
+    padding: 0.5em 0.5rem;
+}
+
+textarea {
+    width: 99%;
+}
+
+/* 4. Fin estilos contacto */
+
+
+/* Fin estilos Main */
+
+
+/* Estilos Footer */
+
+footer {
+    color: black;
+    font-weight: bolder;
+    background-image: url('../multimedia/footer-shape.jpg');
+    background-repeat: no-repeat;
+}
+
+footer p {
+    text-align: center;
+}
+
+.social-media-container a {
+    padding: 0rem 1.5rem;
+}
+
+/* Fin estilos Footer*/
