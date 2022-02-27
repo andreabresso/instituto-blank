@@ -1,4 +1,11 @@
 @import '../base/variables';
+@import '../base/maps';
+
+.contact-container {
+    a {
+        text-decoration: map-get($links, decoration);
+    }
+}
 
 iframe {
     max-width: 90vw;

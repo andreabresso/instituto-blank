@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/maps';
 
 main {
     background-color: $main-bg;
@@ -23,8 +24,8 @@ main {
     }
     a {
         &:visited {
-            text-decoration: none;
-            color: black;
+            text-decoration: map-get($links, decoration);
+            color: map-get($links, font-color);
         }
     }
 }
