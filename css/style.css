@@ -44,7 +44,6 @@ header nav a {
   color: inherit;
   font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 300;
 }
 header nav a:visited {
   text-decoration: none;
@@ -220,6 +219,12 @@ td {
 }
 
 /* Colors */
+/* Colors */
+/* Estilos contenedores de contenidos */
+.recommendation, .languages-items {
+  border-bottom: 5px solid #D3E0EA;
+}
+
 /* Animación banderas */
 .flag {
   transition: all 0.2s ease-in-out;
@@ -229,7 +234,6 @@ td {
 }
 
 .languages-items {
-  border-bottom: 5px solid #D3E0EA;
   padding: 2rem;
   /* Animación links idiomas */
 }
@@ -301,7 +305,9 @@ td {
 }
 
 /* Colors */
-.recommendation {
+/* Colors */
+/* Estilos contenedores de contenidos */
+.recommendation, .languages-items {
   border-bottom: 5px solid #D3E0EA;
 }
 

@@ -1,5 +1,6 @@
 @import '../base/variables';
 @import '../base/maps';
+@import '../base/extends';
 
 /* Animación banderas */
 
@@ -12,7 +13,7 @@
 }
 
 .languages-items {
-    border-bottom: 5px solid $first-section-bg;
+    @extend%content-container;
     padding: 2rem;
     /* Animación links idiomas */
     a {

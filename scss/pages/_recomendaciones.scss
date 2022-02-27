@@ -1,5 +1,6 @@
 @import '../base/variables';
+@import '../base/extends';
 
 .recommendation {
-    border-bottom: 5px solid $first-section-bg;
+    @extend%content-container;
 }
