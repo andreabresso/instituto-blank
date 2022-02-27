@@ -1,10 +1,10 @@
+@import '../base/mixins';
+
 footer {
-    color: black;
-    font-weight: bolder;
     background-image: url('../multimedia/footer-shape.jpg');
     background-repeat: no-repeat;
     p {
-        text-align: center;
+        @include text(black, center, bold);
     }
     .social-media-container {
         a {
