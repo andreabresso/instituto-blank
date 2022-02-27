@@ -1,3 +1,7 @@
+@import '../base/variables';
+@import '../base/maps';
+@import '../base/extends';
+
 /* Animación banderas */
 
 .flag {
@@ -9,13 +13,13 @@
 }
 
 .languages-items {
-    border-bottom: 5px solid $first-section-bg;
+    @extend%content-container;
     padding: 2rem;
     /* Animación links idiomas */
     a {
         position: relative;
-        text-decoration: none;
-        color: inherit;
+        text-decoration: map-get($links, decoration);
+        color: map-get($links, font-color);
         &::before {
             content: "";
             position: absolute;
