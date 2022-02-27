@@ -22,13 +22,13 @@ body {
 }
 
 footer {
-  color: black;
-  font-weight: bolder;
   background-image: url("../multimedia/footer-shape.jpg");
   background-repeat: no-repeat;
 }
 footer p {
+  color: black;
   text-align: center;
+  font-weight: bold;
 }
 footer .social-media-container a {
   padding: 0rem 1.5rem;
@@ -67,15 +67,20 @@ main .first-section .first-section-img {
 }
 main h1 {
   font-size: 2rem;
+  color: #2C5364;
   text-align: center;
   font-weight: bold;
 }
 main h2 {
   font-size: 1.8rem;
+  color: #2C5364;
   text-align: center;
+  font-weight: normal;
 }
 main p {
+  color: black;
   text-align: justify;
+  font-weight: normal;
 }
 main a:visited {
   text-decoration: none;
@@ -138,7 +143,9 @@ table, th, td {
   border: 1px double grey;
   border-collapse: collapse;
   padding: 0.5em 0.5rem;
+  color: black;
   text-align: center;
+  font-weight: normal;
 }
 
 .language-tables {

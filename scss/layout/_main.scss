@@ -1,5 +1,6 @@
 @import '../base/variables';
 @import '../base/maps';
+@import '../base/mixins';
 
 main {
     background-color: $main-bg;
@@ -12,15 +13,14 @@ main {
     }
     h1 {
         font-size: 2rem;
-        text-align: center;
-        font-weight: bold;
+        @include text($h-color, center, bold);
     }
     h2 {
         font-size: 1.8rem;
-        text-align: center;
+        @include text($h-color, center, normal);
     }
     p {
-        text-align: justify;
+        @include text(black, justify, normal);
     }
     a {
         &:visited {
