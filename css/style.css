@@ -307,10 +307,9 @@ td {
 }
 .navbar-override .header-links-container .ul-nav {
   align-items: center;
+  /* Cambio color de texto en navbar */
 }
-
-/* Cambio color de texto en navbar */
-.header-link {
+.navbar-override .header-links-container .ul-nav .header-link {
   color: #F6F5F5 !important;
   font-weight: 300 !important;
 }
