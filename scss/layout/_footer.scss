@@ -7,6 +7,8 @@ footer {
         @include text(black, center, bold);
     }
     .social-media-container {
+        display: inline !important;
+
         a {
             padding: 0rem 1.5rem;
             text-decoration: none;

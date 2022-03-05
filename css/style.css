@@ -34,6 +34,9 @@ footer p {
   text-align: center;
   font-weight: bold;
 }
+footer .social-media-container {
+  display: inline !important;
+}
 footer .social-media-container a {
   padding: 0rem 1.5rem;
   text-decoration: none;
