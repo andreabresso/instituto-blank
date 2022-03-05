@@ -1,5 +1,5 @@
 @import '../base/variables';
-@import '../base/maps';
+@import '../base/extends';
 @import '../base/mixins';
 
 main {
@@ -24,8 +24,7 @@ main {
     }
     a {
         &:visited {
-            text-decoration: map-get($links, decoration);
-            color: map-get($links, font-color);
+            @extend%links;
         }
     }
 }

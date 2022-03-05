@@ -1,18 +1,16 @@
 @import '../base/variables';
-@import '../base/maps';
+@import '../base/extends';
 
 header {
     overflow: hidden;
     background: $header-bg;
     nav {
         a {
-            text-decoration: map-get($links, decoration);
-            color: map-get($links, font-color);
+            @extend%links;
             font-size: 1.1rem;
             text-transform: uppercase;
             &:visited {
-                text-decoration: map-get($links, decoration);
-                color: map-get($links, font-color);
+                @extend%links;
             }
             img {
                 width: 3rem;

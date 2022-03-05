@@ -1,5 +1,4 @@
 @import '../base/variables';
-@import '../base/maps';
 @import '../base/extends';
 
 /* Animación banderas */
@@ -19,8 +18,7 @@
     /* Animación links idiomas */
     a {
         position: relative;
-        text-decoration: map-get($links, decoration);
-        color: map-get($links, font-color);
+        @extend%links;
         &::before {
             content: "";
             position: absolute;

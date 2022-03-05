@@ -1,9 +1,8 @@
 @import '../base/variables';
-@import '../base/maps';
 
 .contact-container {
     a {
-        text-decoration: map-get($links, decoration);
+        text-decoration: none;
     }
 
     iframe {

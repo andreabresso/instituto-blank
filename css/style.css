@@ -35,25 +35,43 @@ footer .social-media-container a {
 }
 
 /* Colors */
+/* Colors */
+/* Estilos contenedores de contenidos */
+.recommendation, .languages-items {
+  border-bottom: 5px solid #D3E0EA;
+}
+
+/* Estilos links */
+.languages-items a, main a:visited, header nav a:visited, header nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   overflow: hidden;
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
 header nav a {
-  text-decoration: none;
-  color: inherit;
   font-size: 1.1rem;
   text-transform: uppercase;
-}
-header nav a:visited {
-  text-decoration: none;
-  color: inherit;
 }
 header nav a img {
   width: 3rem;
 }
 
 /* Colors */
+/* Colors */
+/* Estilos contenedores de contenidos */
+.recommendation, .languages-items {
+  border-bottom: 5px solid #D3E0EA;
+}
+
+/* Estilos links */
+.languages-items a, main a:visited, header nav a, header nav a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 main {
   background-color: #e9e7e7;
 }
@@ -81,11 +99,6 @@ main p {
   text-align: justify;
   font-weight: normal;
 }
-main a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* Colors */
 .contact-container a {
   text-decoration: none;
@@ -222,6 +235,12 @@ main a:visited {
   border-bottom: 5px solid #D3E0EA;
 }
 
+/* Estilos links */
+.languages-items a, header nav a, header nav a:visited, main a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Animación banderas */
 .flag {
   transition: all 0.2s ease-in-out;
@@ -237,8 +256,6 @@ main a:visited {
 }
 .languages-items a {
   position: relative;
-  text-decoration: none;
-  color: inherit;
 }
 .languages-items a::before {
   content: "";
@@ -301,6 +318,12 @@ main a:visited {
 /* Estilos contenedores de contenidos */
 .recommendation, .languages-items {
   border-bottom: 5px solid #D3E0EA;
+}
+
+/* Estilos links */
+header nav a, header nav a:visited, main a:visited, .languages-items a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Colors */
