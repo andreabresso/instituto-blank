@@ -5,27 +5,32 @@
     a {
         text-decoration: map-get($links, decoration);
     }
-}
 
-iframe {
-    max-width: 90vw;
+    iframe {
+        max-width: 90vw;
+    }
 }
 
 /* Estilos Form */
 .form-container {
     padding: 1.2em 1.2rem;
+
     form {
         border: 2px solid $table-primary-row;
         border-radius: 0.4rem;
+
         /* Tablet, celular horizontal y Desktop */
         @media only screen and (min-width: 1000px) {
             width: 50%;
         }
+
         .form-div {
             padding: 0.5em 0.5rem;
+
             p {
                 padding: 0;
             }
+
             .input-text {
                 display: block;
                 width: 99%;
@@ -34,14 +39,17 @@ iframe {
                     width: 65%;
                 }
             }
+
             .checkbox-options {
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
+
                 .checkbox-item {
                     padding: 0.5em 0.5rem;
                 }
             }
+            
             textarea {
                 width: 99%;
             }

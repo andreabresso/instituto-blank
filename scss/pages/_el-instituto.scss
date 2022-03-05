@@ -10,6 +10,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
     .gallery-item {
         max-width: 85vw;
         margin: 2em 0rem;
@@ -20,6 +21,7 @@
                 transition: transform 0.8s ease;
             }
         }
+        
         .gallery-img {
             width: 100%;
             height: 100%;

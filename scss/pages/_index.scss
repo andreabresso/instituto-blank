@@ -15,6 +15,7 @@
 .languages-items {
     @extend%content-container;
     padding: 2rem;
+    
     /* Animación links idiomas */
     a {
         position: relative;
@@ -36,61 +37,60 @@
             transform: scaleX(1);
         }
     }
-}
 
-/* Agregando emojis banderas con content */
-
-.uk {
-    &:focus::after {
-        content: '🇬🇧';
-    }
-    @media only screen and (min-width: 1000px) {
-        &:hover::after {
+    /* Agregando emojis banderas con content */
+    .uk {
+        &:focus::after {
             content: '🇬🇧';
         }
+        @media only screen and (min-width: 1000px) {
+            &:hover::after {
+                content: '🇬🇧';
+            }
+        }
     }
-}
 
-.france {
-    &:focus::after {
-        content: '🇫🇷';
-    }
-    @media only screen and (min-width: 1000px) {
-        &:hover::after {
+    .france {
+        &:focus::after {
             content: '🇫🇷';
         }
+        @media only screen and (min-width: 1000px) {
+            &:hover::after {
+                content: '🇫🇷';
+            }
+        }
     }
-}
 
-.germany {
-    &:focus::after {
-        content: '🇩🇪';
-    }
-    @media only screen and (min-width: 1000px) {
-        &:hover::after {
+    .germany {
+        &:focus::after {
             content: '🇩🇪';
         }
-    }
-}
-
-.japan {
-    &:focus::after {
-        content: '🇯🇵';
-    }
-    @media only screen and (min-width: 1000px) {
-        &:hover::after {
-            content: '🇯🇵';
+        @media only screen and (min-width: 1000px) {
+            &:hover::after {
+                content: '🇩🇪';
+            }
         }
     }
-}
 
-.skorea {
-    &:focus::after {
-        content: '🇰🇷';
+    .japan {
+        &:focus::after {
+            content: '🇯🇵';
+        }
+        @media only screen and (min-width: 1000px) {
+            &:hover::after {
+                content: '🇯🇵';
+            }
+        }
     }
-    @media only screen and (min-width: 1000px) {
-        &:hover::after {
+
+    .skorea {
+        &:focus::after {
             content: '🇰🇷';
+        }
+        @media only screen and (min-width: 1000px) {
+            &:hover::after {
+                content: '🇰🇷';
+            }
         }
     }
 }

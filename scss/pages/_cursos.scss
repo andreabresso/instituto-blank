@@ -1,12 +1,6 @@
 @import '../base/variables';
 @import '../base/mixins';
 
-table, th, td {
-    border: 1px double grey;
-    border-collapse: collapse;
-    padding: 0.5em 0.5rem;
-    @include text(black, center, normal);
-}
 
 .language-tables {
     font-size: 1rem;
@@ -15,6 +9,7 @@ table, th, td {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     .language-table-item {
         max-width: 90vw;
         padding: 2em 0rem;
@@ -22,21 +17,32 @@ table, th, td {
         @media only screen and (min-width: 600px) {
                 width: 60%;
         }
+
+        table, th, td {
+            border: 1px double grey;
+            border-collapse: collapse;
+            padding: 0.5em 0.5rem;
+            @include text(black, center, normal);
+        }
+
         table {
             width: 100%;
+
             .primary-row {
                 background-color: $table-primary-row;
             }
+
             .secondary-row {
                 background-color: $table-secondary-row;
             }
+
             .level {
                 background-color: $table-level;
             }
+
+            td {
+                background-color: $first-section-bg;
+            }
         }
     }
-}
-
-td {
-    background-color: $first-section-bg;
 }
