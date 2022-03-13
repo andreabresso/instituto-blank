@@ -1,7 +1,7 @@
 {
   "name": "instituto-blank",
   "version": "1.0.0",
-  "description": "Final project for Web Development course simulating the website for a language institute",
+  "description": "Website for the Blank language institute featuring 5 sections: index, courses, about the institute, contact and recommendations",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
